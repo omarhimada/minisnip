@@ -99,7 +99,7 @@ public sealed class MinisnipWindow : Window {
 			BitmapSource img = ConvertToWpfImageSource(bmp);
 			Clipboard.SetImage(img);
 		} finally {
-			//Close();
+			Close();
 		}
 	}
 	private static Bitmap CaptureScreenRect(Rect r) {
